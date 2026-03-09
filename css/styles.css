@@ -25,6 +25,11 @@
     --transition: 0.3s ease;
     --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 20px 25px -5px rgba(19, 146, 236, 0.2);
+    --radius-lg: 1.5rem;
+    --radius-md: 1rem;
+    --radius-sm: 0.5rem;
+    --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+    --gradient-deep: linear-gradient(135deg, var(--primary-deep) 0%, var(--primary) 100%);
 }
 
 /* ==========================================================================
@@ -61,6 +66,22 @@ a {
     text-decoration: none;
     color: inherit;
     transition: var(--transition);
+}
+
+.title-separator {
+    width: 80px;
+    height: 4px;
+    background: var(--primary);
+    margin: 1.5rem auto;
+    border-radius: 2px;
+}
+
+.title-separator-large {
+    width: 120px;
+    height: 6px;
+    background: var(--primary);
+    margin: 2rem auto;
+    border-radius: 3px;
 }
 
 /* ==========================================================================
@@ -554,7 +575,7 @@ body.dark .transformation-section {
 
 .grid-2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
@@ -570,10 +591,17 @@ body.dark .trans-card {
 
 .trans-img {
     aspect-ratio: 16 / 9;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     position: relative;
     transition: 0.7s ease;
+    background-repeat: no-repeat;
+}
+
+.trans-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .trans-card:hover .trans-img {
@@ -637,8 +665,9 @@ body.dark .trans-card {
     margin: 0 auto;
     background-color: var(--white);
     padding: 4rem;
-    border-radius: 2rem;
+    border-radius: var(--radius-lg);
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--border-card);
 }
 
 body.dark .form-container {
@@ -766,17 +795,138 @@ textarea:focus {
 /* ==========================================================================
    RESPONSIVE DESIGN
    ========================================================================== */
+@media (max-width: 1024px) {
+    .hero-slider {
+        height: 600px;
+    }
+
+    .slider-title {
+        font-size: 2.75rem;
+    }
+
+    .hero-content.centered {
+        max-width: 70%;
+    }
+}
+
 @media (max-width: 768px) {
-    .hero-section {
+    .content {
+        width: 95%;
+    }
+
+    .section-padding {
+        padding: 4rem 1rem;
+    }
+
+    /* Hero Index */
+    .hero_index {
+        flex-direction: column;
+    }
+
+    .hero-index-content {
         padding: 3rem 1.5rem;
-        min-height: 500px;
+        text-align: center;
     }
 
-    .form-grid {
-        grid-template-columns: 1fr;
+    .title_index {
+        font-size: 2.5rem;
     }
 
-    .grid-2 {
+    .btn-hero {
+        margin: 0 auto;
+    }
+
+    .hero_img {
+        margin-left: 0 !important;
+        margin-top: 1rem;
+    }
+
+    /* Hero Slider */
+    .hero-section {
+        padding: 2rem 0;
+    }
+
+    .hero-slider {
+        height: 500px;
+        margin: 0;
+        border-radius: var(--radius-md);
+    }
+
+    .slider-title {
+        font-size: 2.25rem;
+    }
+
+    .slider-desc {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-content.centered {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
+    /* Services & Details Grid */
+    .services, .details-grid, .grid-2 {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .details-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .details-card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Contact Form */
+    .contact-section {
+        padding: 4rem 1rem;
+    }
+
+    .form-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .form-grid-v2 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .col-span-2, .col-full {
+        grid-column: span 1;
+    }
+
+    .form-section-header {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title_index {
+        font-size: 1.85rem;
+        line-height: 1.3;
+    }
+
+    .slider-title {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .section-title-large {
+        font-size: 1.6rem;
+    }
+
+    .hero-slider {
+        height: 420px;
+    }
+
+    .section-padding {
+        padding: 3rem 1rem;
     }
 }

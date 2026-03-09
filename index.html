@@ -24,6 +24,7 @@
         <div id="header-placeholder"></div>
 
         <main>
+            <!-- Hero Slider Section -->
             <section class="hero_index">
                 <div class="hero-index-content">
                     <h1 class="title_index">FROM THE START TO THE FINISH LINE</h1>
@@ -37,11 +38,15 @@
                 </figure>
             </section>
 
-            <section class="section-padding">
+
+            <section class="section-padding bg-vibrant-light">
                 <div class="content">
                     <div class="text-center mb-10">
                         <h2 class="font-black section-title">Our Specialized Services</h2>
                         <div class="title-separator"></div>
+                        <p class="text-muted section-subtitle" style="color: var(--text-muted); margin-bottom: 2rem;">
+                            Expert solutions for all your pool needs, from design to maintenance.
+                        </p>
                     </div>
 
                     <div class="services grid-3">
@@ -88,9 +93,7 @@
                 </div>
             </section>
 
-
-            <!-- Hero Slider Section -->
-            <section class="hero-section bg-white">
+            <section class="hero-section bg-white" style="padding-top: 0;">
                 <div class="content">
                     <div class="hero-slider">
                         <div class="slider-container" id="slider">
@@ -132,9 +135,6 @@
                 </div>
             </section>
 
-            <section class="hero_v2">
-
-            </section>
             <!-- Services Section -->
             <!-- Services Section -->
 
@@ -211,9 +211,10 @@
                     </div>
                     <div class="grid-2">
                         <div class="trans-card">
-                            <div class="trans-img"
-                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCRobictKuTHv7TC2OXDp4PCS2wclvJgu6C_c9OqzpfclBfRfF_ov6ZGlNpKwAhMKkCNFZ1tkmUFb14o2oEKy4HOYzxV1VcSLU-wqdIrQ_HTi33rd_wVmkyAu27A2s2tBlAROz7GumDtz0NpP47mynsnJ9XEts5bqik20uCpRDYjUHxvIyX3NxjdLTfZOkYhpBEPG8zKwYg66eyLerTqfL7dbq0oy_zAFWs_QgVClA6updvaliOZ6861fBgpwmeRGidSYHnqQ83TA");'>
+                            <!--<div class="trans-img" style='background-image: url("img/pool-clean-before.jpeg");'>-->
+                            <div class="trans-img">
                                 <div class="badge badge-before">Before</div>
+                                <img src="img/pool-clean-before.jpeg" alt="" loading="lazy">
                             </div>
                             <div class="trans-card-content">
                                 <h4 class="trans-card-title">Cracked Concrete to
@@ -223,9 +224,10 @@
                             </div>
                         </div>
                         <div class="trans-card">
-                            <div class="trans-img"
-                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAkhoEV5DYNxVOEITiPMz7JBraikYKmBvzbz2gFAs4c5VyR2bCsHIWRNiJHyXBSyryO1GJMg80NA7hyYxypExKrk2HQOFzR3xqFM1O-u76q4_TYwWr5_X-Zzz-krLz2o5yj-xe-2mLS93e0XVvuDtGXs9FgQErWN3MFkVlFS_Ck_DNEUwx8bjXkCx7nO0n9yKqCQTkPRhwrhb3p6O-j1MxLJfUEn3GAmkO4vcGGr1QCOWNYLzbCQN_Z889mJqlMhrWwQWMoJ3CVYQ");'>
+                            <!--<div class="trans-img" style='background-image: url("img/pool-clean-after.jpeg");'>-->
+                            <div class="trans-img">
                                 <div class="badge badge-after">After</div>
+                                <img src="img/pool-clean-after.jpeg" alt="" loading="lazy">
                             </div>
                             <div class="trans-card-content">
                                 <h4 class="trans-card-title">Award-Winning Transformation
@@ -240,47 +242,59 @@
             <!-- Contact Form Section -->
             <!-- Contact Form Section -->
             <section id="contact" class="contact-section">
-
                 <div class="content">
-                    <div class="contact-card-v2">
+                    <div class="form-container">
                         <div class="text-center mb-10">
-                            <h2 class="title-v2">Contact Splash Pools</h2>
-                            <p class="text-muted">Send us a message and we'll get back to you within 24 hours.</p>
-                            <div class="title-underline"></div>
+                            <h2 class="font-black section-title-large" style="color: var(--primary);">Contact Splash Pools</h2>
+                            <p class="text-muted section-subtitle-large">Send us a message and we'll get back to you within 24 hours.</p>
+                            <div class="title-separator-large"></div>
                         </div>
-                        <form action="https://formspree.io/f/xqakpory" method="POST" class="form-v2">
-                            <div class="form-row">
-                                <div class="form-group-v2">
-                                    <label>Full Name</label>
-                                    <input type="text" name="name" placeholder="John Doe">
-                                </div>
-                                <div class="form-group-v2">
-                                    <label>Email Address</label>
-                                    <input type="email" name="email" placeholder="john@example.com">
-                                </div>
+
+                        <form action="https://formspree.io/f/xqakpory" method="POST" class="form-grid-v2">
+                            <div class="form-section-header col-full">Basic Information</div>
+                            
+                            <div class="form-group col-span-2">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
                             </div>
-                            <div class="form-group-v2">
-                                <label>Phone Number</label>
-                                <input type="tel" name="phone" placeholder="(555) 000-0000">
+                            
+                            <div class="form-group col-span-2">
+                                <label for="email">E-mail Address</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
                             </div>
-                            <div class="form-group-v2">
-                                <label>Your Message</label>
-                                <textarea name="message" rows="4" placeholder="Type your message here..."></textarea>
+
+                            <div class="form-group col-span-2">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
                             </div>
-                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+
+                            <div class="form-group col-span-2">
+                                <label for="address">Project Address (Optional)</label>
+                                <input type="text" id="address" name="address" placeholder="123 Street Name">
+                            </div>
+
+                            <div class="form-group col-full">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Type your message here..."></textarea>
+                            </div>
+
+                            <div class="col-full mt-4">
+                                <button type="submit" class="btn btn-primary btn-submit">
+                                    Send Message
+                                </button>
+                            </div>
                         </form>
-                        <p class="text-center text-muted" style="font-size: 0.75rem; margin-top: 2rem;">Additional
-                            details available on our forms.</p>
+                        <p class="text-center text-muted mt-4" style="font-size: 0.75rem;">Additional
+                            details available on our service contract form.</p>
                     </div>
                 </div>
             </section>
 
             <!-- WhatsApp Floating Button -->
-            <!-- WhatsApp Floating Button -->
-            <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+            <!-- <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
                 <img src="img/ico-whatsapp.webp" alt="whatsapp">
                 <span class="whatsapp-tooltip">¿Necesitas ayuda? ¡Escríbenos!</span>
-            </a>
+            </a> -->
 
             <div id="footer-placeholder"></div>
         </main>
