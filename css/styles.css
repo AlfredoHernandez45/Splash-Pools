@@ -25,6 +25,11 @@
     --transition: 0.3s ease;
     --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 20px 25px -5px rgba(19, 146, 236, 0.2);
+    --radius-lg: 1.5rem;
+    --radius-md: 1rem;
+    --radius-sm: 0.5rem;
+    --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+    --gradient-deep: linear-gradient(135deg, var(--primary-deep) 0%, var(--primary) 100%);
 }
 
 /* ==========================================================================
@@ -61,6 +66,22 @@ a {
     text-decoration: none;
     color: inherit;
     transition: var(--transition);
+}
+
+.title-separator {
+    width: 80px;
+    height: 4px;
+    background: var(--primary);
+    margin: 1.5rem auto;
+    border-radius: 2px;
+}
+
+.title-separator-large {
+    width: 120px;
+    height: 6px;
+    background: var(--primary);
+    margin: 2rem auto;
+    border-radius: 3px;
 }
 
 /* ==========================================================================
@@ -570,10 +591,17 @@ body.dark .trans-card {
 
 .trans-img {
     aspect-ratio: 16 / 9;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     position: relative;
     transition: 0.7s ease;
+    background-repeat: no-repeat;
+}
+
+.trans-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .trans-card:hover .trans-img {
@@ -637,8 +665,9 @@ body.dark .trans-card {
     margin: 0 auto;
     background-color: var(--white);
     padding: 4rem;
-    border-radius: 2rem;
+    border-radius: var(--radius-lg);
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--border-card);
 }
 
 body.dark .form-container {
