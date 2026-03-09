@@ -65,10 +65,22 @@ nav {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     header {
-        padding: 1rem;
+        padding: 0.75rem 1rem;
     }
 
     nav {
+        display: flex;
+        gap: 1rem;
+    }
+
+    /* Hide text links on mobile, keep Call/Action button */
+    nav .nav-link {
         display: none;
+    }
+
+    /* Make the button smaller on mobile */
+    nav .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
     }
 }
