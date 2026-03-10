@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Splash Pool & SPA Services LLC.</title>
+    <meta name="description"
+        content="Splash Pools & SPA Services offers award-winning pool construction, expert repairs, and professional maintenance in Coral Springs, Florida. Transform your backyard into a luxury oasis today!">
+
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/services.css">
+</head>
+
+<body class="light splash-pools-index">
+    <div class="layout-container">
+        <div id="header-placeholder"></div>
+
+        <main>
+            <!-- Hero Slider Section -->
+            <section class="services-hero-new" style="padding: 100px 0; background-color: var(--white);">
+                <div class="content">
+                    <div class="service-detail-grid">
+                        <div class="service-detail-content">
+                            <h1 class="font-black">FROM THE START TO THE FINISH LINE</h1>
+                            <p class="text-muted">
+                                We got all the services you need to help you reach that hassle - free pool experience.
+                            </p>
+                            <a href="#services-tabs" class="btn btn-primary btn-hero"
+                                style="padding: 1rem 2rem; font-size: 1.125rem;">Explore Services</a>
+                        </div>
+                        <div class="service-detail-img">
+                            <img src="img/slider-img2.jpeg" alt="Pool Service Excellence"
+                                class="img-responsive rounded-lg shadow-lg" style="border-radius: 2rem;">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Before & After Comparison Slider -->
+            <section class="comparison-section" id="comparison">
+                <div class="content">
+                    <div class="text-center mb-10">
+                        <h2 class="font-black section-title-large ">Stunning Transformations</h2>
+                        <p class="text-muted section-subtitle">Slide the bar to see the difference our expert
+                            restoration makes.</p>
+                        <div class="title-separator-large"></div>
+                    </div>
+
+                    <div class="comparison-container" id="comparison-slider">
+                        <img src="img/pool-clean-before.jpeg" alt="Before Restoration" class="before-image">
+                        <img src="img/pool-clean-after.jpeg" alt="After Restoration" class="after-image"
+                            id="after-image">
+
+                        <div class="slider-handle" id="slider-handle">
+                            <div class="slider-button">
+                                <span class="material-symbols-outlined">unfold_more</span>
+                            </div>
+                        </div>
+
+                        <div class="slider-label label-before">BEFORE</div>
+                        <div class="slider-label label-after">AFTER</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services-tabs-section" id="services-tabs">
+                <div class="content">
+                    <div class="text-center mb-10">
+                        <h2 class="font-black section-title-large">Comprehensive Care for Your Pool</h2>
+                        <p class="text-muted section-subtitle">From seasonal openings to major renovations, we handle
+                            every detail with precision and expertise.</p>
+                        <div class="title-separator-large"></div>
+                    </div>
+
+                    <!-- Tabs Navigation -->
+                    <div class="tabs-nav">
+                        <button class="tab-btn active" onclick="switchTab(event, 'opening')">Pool Opening</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'closing')">Pool Closing</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'maintenance')">Routine Maintenance</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'filtration')">Filtration Systems</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'liners')">Liner Replacements</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'renovations')">Major Renovations</button>
+                    </div>
+
+                    <!-- Tab Contents -->
+                    <div id="opening" class="tab-content active">
+                        <div class="service-detail-grid">
+                            <div class="service-detail-content">
+                                <h2>Pool Opening</h2>
+                                <p>Get your pool season-ready with our comprehensive opening service. We handle the
+                                    heavy lifting so you can jump right in as soon as the sun comes out.</p>
+                                <ul class="service-features">
+                                    <li><span class="material-symbols-outlined">check_circle</span> Reassemble
+                                        filtration</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Lubricate O-rings
+                                    </li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Water balancing</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> System priming</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Hardware reinstall
+                                    </li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Safety inspection
+                                    </li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary mt-10">Schedule Opening</a>
+                            </div>
+                            <div class="service-detail-img">
+                                <img src="img/slider-img1.jpeg" alt="Pool Opening"
+                                    class="img-responsive rounded-lg shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="closing" class="tab-content">
+                        <div class="service-detail-grid">
+                            <div class="service-detail-content">
+                                <h2>Pool Closing</h2>
+                                <p>Protect your investment during the off-season. Our professional winterization
+                                    prevents freeze damage and ensures a smooth opening next year.</p>
+                                <ul class="service-features">
+                                    <li><span class="material-symbols-outlined">check_circle</span> Freeze protection
+                                    </li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Winter chemicals
+                                    </li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Filter cleaning</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Line blowing</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Cover installation
+                                    </li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Equipment storage
+                                    </li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary mt-10">Request Winterization</a>
+                            </div>
+                            <div class="service-detail-img">
+                                <img src="img/slider-img3.jpeg" alt="Pool Closing"
+                                    class="img-responsive rounded-lg shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="maintenance" class="tab-content">
+                        <div class="service-detail-content text-center" style="max-width: 800px; margin: 0 auto 3rem;">
+                            <h2>Routine Scheduled Maintenance</h2>
+                            <p>Pools are meant to be a source of fun! Not one more chore to be worried about. From
+                                weekly, every other week, monthly or occasional service calls, we have all the services
+                                you need to make of that swimming pool, a true paradise to enjoy and relax!</p>
+                        </div>
+                        <div class="maintenance-gallery">
+                            <div class="gallery-item"><img src="img/pool-clean.jpeg" alt="Routine Maintenance 1"></div>
+                            <div class="gallery-item"><img src="img/pool-clean2.jpeg" alt="Routine Maintenance 2"></div>
+                            <div class="gallery-item"><img src="img/pool-clean3.jpeg" alt="Routine Maintenance 3"></div>
+                        </div>
+                        <div class="text-center mt-10">
+                            <a href="#contact" class="btn btn-primary">Book Maintenance</a>
+                        </div>
+                    </div>
+
+                    <div id="filtration" class="tab-content">
+                        <div class="service-detail-grid">
+                            <div class="service-detail-content">
+                                <h2>Filtration Systems</h2>
+                                <p>Keep your water crystal clear and healthy. We specialize in high-efficiency
+                                    filtration systems, variable speed pumps, and automated chlorination solutions.</p>
+                                <ul class="service-features">
+                                    <li><span class="material-symbols-outlined">check_circle</span> Pump repairs</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Filter replacement
+                                    </li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Salt system setup
+                                    </li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Smart controls</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Leak detection</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Energy audits</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary mt-10">Upgrade My System</a>
+                            </div>
+                            <div class="service-detail-img">
+                                <img src="img/pool-clean-after.jpeg" alt="Filtration Systems"
+                                    class="img-responsive rounded-lg shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="liners" class="tab-content">
+                        <div class="service-detail-grid">
+                            <div class="service-detail-content">
+                                <h2>Liner Replacements</h2>
+                                <p>Breathe new life into your vinyl pool. Our precision-fit liners come in a wide
+                                    variety of contemporary patterns and durable materials.</p>
+                                <ul class="service-features">
+                                    <li><span class="material-symbols-outlined">check_circle</span> Custom 3D measuring
+                                    </li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Premium patterns
+                                    </li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Wrinkle-free fit
+                                    </li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Step upgrades</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Fast installation
+                                    </li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Warranty included
+                                    </li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary mt-10">Choose My Pattern</a>
+                            </div>
+                            <div class="service-detail-img">
+                                <img src="img/fondo-piscina-hero.png" alt="Liner Replacements"
+                                    class="img-responsive rounded-lg shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="renovations" class="tab-content">
+                        <div class="service-detail-grid">
+                            <div class="service-detail-content">
+                                <h2>Full Major Renovations</h2>
+                                <p>From cracked concrete to a contemporary oasis. We handle complete structural
+                                    overhauls, including tiling, coping, and modern resurfacing.</p>
+                                <ul class="service-features">
+                                    <li><span class="material-symbols-outlined">check_circle</span> Plaster resurfacing
+                                    </li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Glass tile work</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Coping & decking
+                                    </li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> LED lighting</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Water features</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Automation setup
+                                    </li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary mt-10">Start My Design</a>
+                            </div>
+                            <div class="service-detail-img">
+                                <img src="img/slider-img2.jpeg" alt="Major Renovations"
+                                    class="img-responsive rounded-lg shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Form Section -->
+            <!-- Contact Form Section -->
+            <section id="contact" class="contact-section">
+                <div class="content">
+                    <div class="form-container">
+                        <div class="text-center mb-10">
+                            <h2 class="font-black section-title-large" style="color: var(--primary);">Contact Splash
+                                Pools</h2>
+                            <p class="text-muted section-subtitle-large">Send us a message and we'll get back to you
+                                within 24 hours.</p>
+                            <div class="title-separator-large"></div>
+                        </div>
+
+                        <form action="https://formspree.io/f/xqakpory" method="POST" class="form-grid-v2">
+                            <div class="form-section-header col-full">Basic Information</div>
+
+                            <div class="form-group col-span-2">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+
+                            <div class="form-group col-span-2">
+                                <label for="email">E-mail Address</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+
+                            <div class="form-group col-span-2">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+                            </div>
+
+                            <div class="form-group col-span-2">
+                                <label for="address">Project Address (Optional)</label>
+                                <input type="text" id="address" name="address" placeholder="123 Street Name">
+                            </div>
+
+                            <div class="form-group col-full">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="4" required
+                                    placeholder="Type your message here..."></textarea>
+                            </div>
+
+                            <div class="col-full mt-4">
+                                <button type="submit" class="btn btn-primary btn-submit">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                        <p class="text-center text-muted mt-4" style="font-size: 0.75rem;">Additional
+                            details available on our service contract form.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WhatsApp Floating Button -->
+            <!-- <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+                <img src="img/ico-whatsapp.webp" alt="whatsapp">
+                <span class="whatsapp-tooltip">¿Necesitas ayuda? ¡Escríbenos!</span>
+            </a> -->
+
+            <div id="footer-placeholder"></div>
+        </main>
+
+        <script>
+            function switchTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tab-content");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].classList.remove("active");
+                }
+                tablinks = document.getElementsByClassName("tab-btn");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].classList.remove("active");
+                }
+                document.getElementById(tabName).classList.add("active");
+                evt.currentTarget.classList.add("active");
+            }
+
+            // Comparison Slider
+            const sliderContainer = document.getElementById('comparison-slider');
+            const afterImage = document.getElementById('after-image');
+            const sliderHandle = document.getElementById('slider-handle');
+
+            if (sliderContainer) {
+                const moveSlider = (clientX) => {
+                    let rect = sliderContainer.getBoundingClientRect();
+                    let x = clientX - rect.left;
+                    let percent = (x / rect.width) * 100;
+                    if (percent < 0) percent = 0;
+                    if (percent > 100) percent = 100;
+
+                    afterImage.style.clipPath = `inset(0 0 0 ${percent}%)`;
+                    sliderHandle.style.left = `${percent}%`;
+                };
+
+                sliderContainer.addEventListener('mousemove', (e) => moveSlider(e.clientX));
+                sliderContainer.addEventListener('touchmove', (e) => moveSlider(e.touches[0].clientX));
+            }
+        </script>
+
+        <script src="js/components.js"></script>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -12,11 +12,11 @@ const headerHTML = `
         </a>
         <nav>
             <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="services.html">Services</a>
             <!--<a class="nav-link" href="#">Portfolio</a>
             <a class="nav-link" href="#">Testimonials</a>-->
             <a class="nav-link" href="contact-us.html">Contact</a>
-            <a href="#contact" class="btn btn-primary">Get a Quote</a>
+            <a href="contact-us.html" class="btn btn-primary">Get a Quote</a>
         </nav>
     </div>
 </header>
