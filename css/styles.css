@@ -343,7 +343,7 @@ a {
 
 .hero-content.centered {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     border-radius: 25px;
     flex-direction: column;
@@ -838,7 +838,7 @@ textarea:focus {
 
     .hero_img {
         margin-left: 0 !important;
-        margin-top: 1rem;
+        /*margin-top: 1rem;*/
     }
 
     /* Hero Slider */
@@ -867,7 +867,9 @@ textarea:focus {
     }
 
     /* Services & Details Grid */
-    .services, .details-grid, .grid-2 {
+    .services,
+    .details-grid,
+    .grid-2 {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
@@ -895,7 +897,8 @@ textarea:focus {
         gap: 1rem;
     }
 
-    .col-span-2, .col-full {
+    .col-span-2,
+    .col-full {
         grid-column: span 1;
     }
 
