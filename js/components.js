@@ -11,11 +11,11 @@ const headerHTML = `
             <img src="img/logo.png" alt="Splash Pools Logo" class="logo-img">
         </a>
         <nav>
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/services">Services</a>
             <!--<a class="nav-link" href="#">Portfolio</a>
             <a class="nav-link" href="#">Testimonials</a>-->
-            <a class="nav-link" href="contact-us.html">Contact</a>
+            <a class="nav-link" href="/contact-us">Contact</a>
             <a href="contact-us.html" class="btn btn-primary">Get a Quote</a>
         </nav>
     </div>
@@ -24,7 +24,7 @@ const headerHTML = `
 
 const footerHTML = `
 <footer>
-    <div class="max-w-1200 footer-grid">
+    <div class="content footer-grid">
         <div class="footer-section">
             <div class="logo-wrapper mb-10">
                 <img src="img/logo-white.png" alt="Splash Pools Logo" class="logo-img">
@@ -33,14 +33,14 @@ const footerHTML = `
                 Building premium aquatic experiences since 1998. Quality craftsmanship meets modern
                 engineering in every project.
             </p>
-            <div class="social-icons">
+            <!--<div class="social-icons">
                 <a href="#" class="social-btn"><span class="material-symbols-outlined"
                         style="font-size: 1.25rem;">public</span></a>
                 <a href="#" class="social-btn"><span class="material-symbols-outlined"
                         style="font-size: 1.25rem;">share</span></a>
                 <a href="#" class="social-btn"><span class="material-symbols-outlined"
                         style="font-size: 1.25rem;">thumb_up</span></a>
-            </div>
+            </div>-->
         </div>
 
         <div class="footer-section">
@@ -103,3 +103,18 @@ document.addEventListener("DOMContentLoaded", () => {
         footerPlaceholder.innerHTML = footerHTML;
     }
 });
+
+// Image Modal Logic
+function openImageModal(imgSrc, captionText) {
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("img01");
+    var caption = document.getElementById("imageModalCaption");
+    modal.style.display = "block";
+    modalImg.src = imgSrc;
+    caption.innerHTML = captionText;
+}
+
+function closeImageModal() {
+    var modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+}
