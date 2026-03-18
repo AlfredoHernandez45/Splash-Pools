@@ -33,14 +33,6 @@ const footerHTML = `
                 Building premium aquatic experiences since 1998. Quality craftsmanship meets modern
                 engineering in every project.
             </p>
-            <!--<div class="social-icons">
-                <a href="#" class="social-btn"><span class="material-symbols-outlined"
-                        style="font-size: 1.25rem;">public</span></a>
-                <a href="#" class="social-btn"><span class="material-symbols-outlined"
-                        style="font-size: 1.25rem;">share</span></a>
-                <a href="#" class="social-btn"><span class="material-symbols-outlined"
-                        style="font-size: 1.25rem;">thumb_up</span></a>
-            </div>-->
         </div>
 
         <div class="footer-section">
@@ -102,6 +94,25 @@ document.addEventListener("DOMContentLoaded", () => {
     if (footerPlaceholder) {
         footerPlaceholder.innerHTML = footerHTML;
     }
+
+    // Scroll Reveal Logic
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+    }
+    window.addEventListener("scroll", reveal);
+    
+    // Trigger once on load
+    reveal();
 });
 
 // Image Modal Logic
