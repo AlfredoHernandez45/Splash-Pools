@@ -4,7 +4,74 @@
 
 .services-tabs-section {
     padding: 80px 0;
+    /*background-color: #2a6cbd;*/
+    background-color: var(--primary);
+}
+
+.services-tabs-section h2 {
+    color: var(--white) !important;
+}
+
+.services-tabs-section .section-subtitle {
+    color: var(--white) !important;
+    font-weight: 500;
+}
+
+.services-tabs-section .title-separator-large {
     background-color: var(--white);
+}
+
+.services-tabs-section .principal-list-features {
+    align-items: start;
+}
+
+.services-tabs-section .principal-list-features li {
+    text-align: left;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.services-tabs-section .btn {
+    margin: 30px 0 0;
+    background-color: white;
+    color: #026bc2;
+    border: 1px solid white;
+}
+
+.services-tabs-section .btn:hover {
+    background-color: #026bc2;
+    color: white;
+}
+
+.service-detail-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-detail-img img {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.1);
+    max-height: 380px;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.services-tabs-section .tabs-nav {
+    border: 2px solid var(--white);
+    border-radius: 25px 25px 0 0;
+    margin: 0 !important;
+}
+
+.services-tabs-section .tab-content {
+    border-bottom: 2px solid var(--white);
+    border-left: 2px solid var(--white);
+    border-right: 2px solid var(--white);
+    border-radius: 0 0 25px 25px;
+    
+    padding: 20px;
 }
 
 .services-accordion-mobile {
@@ -28,28 +95,37 @@
     background: transparent;
     font-size: 1rem;
     font-weight: 700;
-    color: var(--text-muted);
+    color: white;
     cursor: pointer;
     transition: all var(--transition);
     position: relative;
 }
 
-.tab-btn:hover {
-    color: var(--primary);
-}
-
-.tab-btn.active {
-    color: var(--primary);
-}
-
-.tab-btn.active::after {
+.tab-btn::after {
     content: '';
     position: absolute;
     bottom: -1.15rem;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 3px;
-    background-color: var(--primary);
+    background-color: #effff8;
+    transition: width 0.3s ease;
+}
+
+.tab-btn:hover::after {
+    width: 100%;
+    background-color: #3ffff8;
+    bottom: 0;
+}
+
+.tab-btn.active {
+    color: #3ffff8;
+}
+
+.tab-btn.active::after {
+    width: 100%;
+    background-color: #3ffff8;
+    bottom: -1.15rem;
 }
 
 /* Tab Content */
@@ -126,7 +202,7 @@ h2.section-title-large {
 
 .service-detail-content p {
     font-size: 1.125rem;
-    color: var(--text-muted);
+    color: white;
     margin-bottom: 2rem;
     line-height: 1.7;
 }
@@ -144,10 +220,11 @@ h2.section-title-large {
     gap: 0.75rem;
     font-size: 0.95rem;
     font-weight: 600;
+    color: white;
 }
 
 .service-features .material-symbols-outlined {
-    color: var(--primary);
+    color: #3ffff8;
     font-size: 1.25rem;
 }
 
@@ -179,14 +256,13 @@ h2.section-title-large {
 
 /* Comparison Slider */
 .comparison-section {
-    padding: 100px 0;
-    background-color: var(--background-light);
+    padding: 50px 0 80px;
+    background-color: var(--white);
 }
 
 .comparison-container {
     position: relative;
     width: 100%;
-    max-width: 910px;
     margin: 0 auto;
     aspect-ratio: 16/9;
     overflow: hidden;
@@ -266,6 +342,210 @@ h2.section-title-large {
     right: 2rem;
 }
 
+.closing-tab-section {
+    background-color: var(--gray-100);
+}
+
+.closing-tab-section .section-title-large {
+    color: #454545 !important;
+}
+
+.closing-tab-section .title-separator-large {
+    background-color: var(--primary) !important;
+}
+
+.closing-tab-section .section-subtitle {
+    color: #000 !important;
+    max-width: 100%;
+}
+
+.closing-tab-section .material-symbols-outlined {
+    color: var(--primary) !important;
+}
+
+.closing-tab-section li {
+    color: #464646 !important;
+}
+
+.closing-tab-section .tabs-nav {
+    /*background-color: var(--primary) !important;*/
+    border: 2px solid var(--primary) !important;
+    border-radius: 20px 20px 0 0 !important;
+    margin: 0 !important;
+}
+
+.closing-tab-section .tab-btn {
+    color: var(--primary) !important;
+}
+
+.closing-tab-section .tab-btn.active {
+    color: #fc5f00 !important;
+}
+
+.closing-tab-section .tab-btn:last-child {
+    border-right: none !important;
+}
+
+.closing-tab-section .tab-content {
+    border-radius: 0 0 20px 20px !important;
+    border-bottom: 2px solid var(--primary) !important;
+    border-left: 2px solid var(--primary) !important;
+    border-right: 2px solid var(--primary) !important;
+}
+
+.closing-tab-section .tab-btn.active::after {
+    background-color: #fc5f00;
+}
+
+.closing-tab-section .tab-content {
+    padding: 20px;
+}
+
+.closing-tab-section .section-title-large,
+.closing-tab-section .section-subtitle {
+    color: #000 !important;
+
+}
+
+.closing-tab-section .section-subtitle {
+    margin: 0 0 30px;
+}
+
+.closing-tab-section .tab-btn:hover::after {
+    background-color: #fc5f00 !important;
+}
+
+.closing-tab-section .btn {
+    border: 2px solid var(--primary) !important;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.form-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--border-card);
+}
+
+.form-grid-v2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.form-section-header {
+    font-size: 1.125rem;
+    font-weight: 900;
+    color: var(--primary);
+    margin-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-light);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.col-full {
+    grid-column: span 4;
+}
+
+.col-span-2 {
+    grid-column: span 2;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
+    flex-direction: row;
+    grid-column: span 4;
+}
+
+.checkbox-group input {
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+}
+
+input,
+textarea {
+    padding: 0.75rem;
+    border: 1px solid var(--border-card);
+    border-radius: 0.5rem;
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+    width: 100%;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(19, 146, 236, 0.1);
+}
+
+/* Animation Reveal */
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+[data-reveal].revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+
+@media (min-width: 980px) {
+
+    h2,
+    h2.section-title-large {
+        font-size: 45px;
+    }
+}
+
 @media (max-width: 992px) {
     .service-detail-grid {
         grid-template-columns: 1fr;
@@ -274,6 +554,20 @@ h2.section-title-large {
 
     .service-detail-img {
         order: -1;
+    }
+
+    .form-container {
+        padding: 3rem;
+    }
+
+    .form-grid-v2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .col-full,
+    .col-span-2,
+    .checkbox-group {
+        grid-column: span 2;
     }
 }
 
@@ -348,5 +642,27 @@ h2.section-title-large {
 
     .maintenance-gallery {
         grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .form-grid-v2 {
+        grid-template-columns: 1fr;
+    }
+
+    .col-full,
+    .col-span-2,
+    .checkbox-group {
+        grid-column: span 1;
+    }
+
+    .page-hero {
+        padding: 60px 20px;
+    }
+
+    .page-hero h1 {
+        font-size: 2.5rem;
     }
 }

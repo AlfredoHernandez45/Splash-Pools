@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/services.css">
 </head>
 
-<body class="light splash-pools-index">
+<body class="light splash-pools-services">
     <div class="layout-container">
         <div id="header-placeholder"></div>
 
@@ -72,175 +72,424 @@
                 </div>
             </section>
 
+            <!-- Pool Opening  -->
             <section class="services-tabs-section" id="services-tabs">
                 <div class="content">
                     <div class="text-center mb-10">
-                        <h2 class="font-black section-title-large">Comprehensive Care for Your Pool</h2>
-                        <p class="text-muted section-subtitle">From seasonal openings to major renovations, we handle
-                            every detail with precision and expertise.</p>
+                        <h2 class="font-black section-title-large">POOL OPENING SERVICE</h2>
                         <div class="title-separator-large"></div>
+                        <p class="text-muted section-subtitle">POOL OPENING INCLUDES:</p>
+                        <ul class="service-features principal-list-features">
+                            <li><span class="material-symbols-outlined">check_circle</span> Reassemble filtration system
+                                (Filter elements, clamps, gauges, petcocks, freeze plugs, etc.)</li>
+                            <li><span class="material-symbols-outlined">check_circle</span> Lubricate O-rings and
+                                control valves.</li>
+                            <li><span class="material-symbols-outlined">check_circle</span> Test water chemistry and add
+                                start up chemicals (Separate charge for chemicals apply) *</li>
+                            <li><span class="material-symbols-outlined">check_circle</span> Balance water chemistry
+                                (Separate charge for chemicals apply) *</li>
+                            <li><span class="material-symbols-outlined">check_circle</span> Enable electrical power to
+                                filtration system, set and synchronize remote control boxes, valves, timers, switches
+                                and/or breakers</li>
+                            <li><span class="material-symbols-outlined">check_circle</span> Remove all winter plugs,
+                                prime up pumps and pool lines.</li>
+                            <li><span class="material-symbols-outlined">check_circle</span> Test fire heater and check
+                                safety circuits.</li>
+                            <li><span class="material-symbols-outlined">check_circle</span> Reinstall all pool side
+                                hardware (Separate charge for Safety fence) *</li>
+                            <li><span class="material-symbols-outlined">check_circle</span> Opening service does not
+                                include repairs to pool or pool equipment, in such case a service call must be scheduled
+                                and regular hourly rates</li>
+                        </ul>
+
                     </div>
 
                     <!-- Tabs Navigation -->
                     <div class="tabs-nav">
-                        <button class="tab-btn active" onclick="switchTab(event, 'opening')">Pool Opening</button>
-                        <button class="tab-btn" onclick="switchTab(event, 'closing')">Pool Closing</button>
-                        <button class="tab-btn" onclick="switchTab(event, 'maintenance')">Routine Maintenance</button>
-                        <button class="tab-btn" onclick="switchTab(event, 'filtration')">Filtration Systems</button>
-                        <button class="tab-btn" onclick="switchTab(event, 'liners')">Liner Replacements</button>
-                        <button class="tab-btn" onclick="switchTab(event, 'renovations')">Major Renovations</button>
+                        <button class="tab-btn active" onclick="switchTab(event, 'winter')">Winter cover
+                            removal</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'opening')">Opening Chemicals package</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'maintenance')">Additional equipment and
+                            service charges</button>
                     </div>
 
                     <!-- Tab Contents -->
-                    <div id="opening" class="tab-content active">
+                    <div id="winter" class="tab-content active">
                         <div class="service-detail-grid">
                             <div class="service-detail-content">
-                                <h2>Pool Opening</h2>
-                                <p>Get your pool season-ready with our comprehensive opening service. We handle the
-                                    heavy lifting so you can jump right in as soon as the sun comes out.</p>
+                                <h2>Winter cover removal</h2>
+                                <p>Includes cover hose off cleaning * (Cover must be clear from any EXCESS of water and
+                                    leaves prior to being removed, an hourly service charge will be applied otherwise)
+                                </p>
                                 <ul class="service-features">
+                                    <li><span class="material-symbols-outlined">check_circle</span> Solid cover (Water
+                                        bags or water blocks)</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Solid safety cover
+                                        (Spring / Rubber bungees loaded)</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Mesh safety cover
+                                        (Spring / Rubber bungees loaded)</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Cable system on
+                                        cover</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Water blocks sure
+                                        charge on Safety covers</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary">GET A QUOTE</a>
+                            </div>
+                            <div class="service-detail-img">
+                                <img src="img/pool-clean.jpeg" alt="Pool Opening"
+                                    class="img-responsive rounded-lg shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="opening" class="tab-content">
+                        <div class="service-detail-grid">
+                            <div class="service-detail-content">
+                                <h2>Opening Chemicals package</h2>
+                                <p>Treats up to 24k gallons</p>
+                                <ul class="service-features">
+                                    <li><span class="material-symbols-outlined">check_circle</span> 1 qt. Non-Foaming
+                                        Algaecide 60%</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> 1 qt. Pool stain
+                                        treatment or stain and scale inhibitor</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> 2 Lbs. Sanitizer /
+                                        Oxidizer (Shock)</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary mt-10">GET A QUOTE</a>
+                            </div>
+                            <div class="service-detail-img">
+                                <img src="img/pool-clean2.jpeg" alt="Pool Closing"
+                                    class="img-responsive rounded-lg shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="maintenance" class="tab-content">
+                        <div class="service-detail-grid">
+                            <div class="service-detail-content">
+                                <h2>Additional equipment and service charges</h2>
+                                <ul class="service-features">
+                                    <li><span class="material-symbols-outlined">check_circle</span> *Charges for
+                                        balancing chemicals vary, please check</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Safety Fence / Baby
+                                        barrie</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Excess of water
+                                        and/or leaves removal from cover</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Pool and Spa
+                                        combination </li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> In-Floor cleaning
+                                        system (Caretaker)</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Extra Filter (Except
+                                        Sand)</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Extra Filter or SPA
+                                        Jets Pump </li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Booster Pump (Pool
+                                        cleaner)</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Motor rewiring</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Pool vacuuming at
+                                        time of opening. </li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary mt-10">GET A QUOTE</a>
+                            </div>
+                            <div class="service-detail-img">
+                                <img src="img/pool-clean3.jpeg" alt="Filtration Systems"
+                                    class="img-responsive rounded-lg shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Mobile Accordion Section (Visible only on < 768px) -->
+            <section class="services-accordion-mobile">
+                <div class="content">
+                    <div class="text-center mb-10">
+                        <h2 class="font-black section-title-large">Pool Services</h2>
+                        <p class="text-muted section-subtitle">Expert care for every season.</p>
+                        <div class="title-separator-large"></div>
+                    </div>
+
+                    <div class="accordion-container">
+                        <!-- Opening -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                Pool Opening
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Get your pool season-ready with our comprehensive opening service.</p>
+                                <ul class="service-features" style="grid-template-columns: 1fr;">
                                     <li><span class="material-symbols-outlined">check_circle</span> Reassemble
                                         filtration</li>
                                     <li><span class="material-symbols-outlined">check_circle</span> Lubricate O-rings
                                     </li>
                                     <li><span class="material-symbols-outlined">check_circle</span> Water balancing</li>
-                                    <li><span class="material-symbols-outlined">check_circle</span> System priming</li>
-                                    <li><span class="material-symbols-outlined">check_circle</span> Hardware reinstall
-                                    </li>
                                     <li><span class="material-symbols-outlined">check_circle</span> Safety inspection
                                     </li>
                                 </ul>
-                                <a href="#contact" class="btn btn-primary mt-10">Schedule Opening</a>
-                            </div>
-                            <div class="service-detail-img">
-                                <img src="img/slider-img1.jpeg" alt="Pool Opening"
-                                    class="img-responsive rounded-lg shadow-lg">
+                                <div class="service-detail-img">
+                                    <img src="img/slider-img1.jpeg" alt="Pool Opening"
+                                        class="img-responsive rounded-lg shadow-lg">
+                                </div>
+                                <a href="#contact" class="btn btn-primary mt-4" style="width: 100%;">Schedule
+                                    Opening</a>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="closing" class="tab-content">
-                        <div class="service-detail-grid">
-                            <div class="service-detail-content">
-                                <h2>Pool Closing</h2>
-                                <p>Protect your investment during the off-season. Our professional winterization
-                                    prevents freeze damage and ensures a smooth opening next year.</p>
-                                <ul class="service-features">
+                        <!-- Closing -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                Pool Closing
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Protect your investment during the off-season. Professional winterization prevents
+                                    freeze damage.</p>
+                                <ul class="service-features" style="grid-template-columns: 1fr;">
                                     <li><span class="material-symbols-outlined">check_circle</span> Freeze protection
                                     </li>
                                     <li><span class="material-symbols-outlined">check_circle</span> Winter chemicals
                                     </li>
-                                    <li><span class="material-symbols-outlined">check_circle</span> Filter cleaning</li>
-                                    <li><span class="material-symbols-outlined">check_circle</span> Line blowing</li>
                                     <li><span class="material-symbols-outlined">check_circle</span> Cover installation
                                     </li>
                                     <li><span class="material-symbols-outlined">check_circle</span> Equipment storage
                                     </li>
                                 </ul>
-                                <a href="#contact" class="btn btn-primary mt-10">Request Winterization</a>
+                                <div class="service-detail-img">
+                                    <img src="img/slider-img3.jpeg" alt="Pool Closing"
+                                        class="img-responsive rounded-lg shadow-lg">
+                                </div>
+                                <a href="#contact" class="btn btn-primary mt-4" style="width: 100%;">Request
+                                    Winterization</a>
                             </div>
-                            <div class="service-detail-img">
-                                <img src="img/slider-img3.jpeg" alt="Pool Closing"
-                                    class="img-responsive rounded-lg shadow-lg">
+                        </div>
+
+                        <!-- Maintenance -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                Routine Maintenance
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Pools are meant to be a source of fun! Not one more chore to be worried about. From
+                                    weekly, every other week, monthly or occasional service calls.</p>
+                                <div class="maintenance-gallery">
+                                    <div class="gallery-item"><img src="img/pool-clean.jpeg"
+                                            alt="Routine Maintenance 1"></div>
+                                    <div class="gallery-item"><img src="img/pool-clean2.jpeg"
+                                            alt="Routine Maintenance 2"></div>
+                                    <div class="gallery-item"><img src="img/pool-clean3.jpeg"
+                                            alt="Routine Maintenance 3"></div>
+                                </div>
+                                <a href="#contact" class="btn btn-primary mt-4" style="width: 100%;">Book
+                                    Maintenance</a>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="maintenance" class="tab-content">
-                        <div class="service-detail-content text-center" style="max-width: 800px; margin: 0 auto 3rem;">
-                            <h2>Routine Scheduled Maintenance</h2>
-                            <p>Pools are meant to be a source of fun! Not one more chore to be worried about. From
-                                weekly, every other week, monthly or occasional service calls, we have all the services
-                                you need to make of that swimming pool, a true paradise to enjoy and relax!</p>
-                        </div>
-                        <div class="maintenance-gallery">
-                            <div class="gallery-item"><img src="img/pool-clean.jpeg" alt="Routine Maintenance 1"></div>
-                            <div class="gallery-item"><img src="img/pool-clean2.jpeg" alt="Routine Maintenance 2"></div>
-                            <div class="gallery-item"><img src="img/pool-clean3.jpeg" alt="Routine Maintenance 3"></div>
-                        </div>
-                        <div class="text-center mt-10">
-                            <a href="#contact" class="btn btn-primary">Book Maintenance</a>
-                        </div>
-                    </div>
-
-                    <div id="filtration" class="tab-content">
-                        <div class="service-detail-grid">
-                            <div class="service-detail-content">
-                                <h2>Filtration Systems</h2>
-                                <p>Keep your water crystal clear and healthy. We specialize in high-efficiency
-                                    filtration systems, variable speed pumps, and automated chlorination solutions.</p>
-                                <ul class="service-features">
+                        <!-- Filtration -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                Filtration Systems
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Keep your water crystal clear. We specialize in high-efficiency filtration and
+                                    variable speed pumps.</p>
+                                <ul class="service-features" style="grid-template-columns: 1fr;">
                                     <li><span class="material-symbols-outlined">check_circle</span> Pump repairs</li>
                                     <li><span class="material-symbols-outlined">check_circle</span> Filter replacement
                                     </li>
                                     <li><span class="material-symbols-outlined">check_circle</span> Salt system setup
                                     </li>
-                                    <li><span class="material-symbols-outlined">check_circle</span> Smart controls</li>
                                     <li><span class="material-symbols-outlined">check_circle</span> Leak detection</li>
-                                    <li><span class="material-symbols-outlined">check_circle</span> Energy audits</li>
                                 </ul>
-                                <a href="#contact" class="btn btn-primary mt-10">Upgrade My System</a>
-                            </div>
-                            <div class="service-detail-img">
-                                <img src="img/pool-clean-after.jpeg" alt="Filtration Systems"
-                                    class="img-responsive rounded-lg shadow-lg">
+                                <div class="service-detail-img">
+                                    <img src="img/pool-clean-after.jpeg" alt="Filtration Systems"
+                                        class="img-responsive rounded-lg shadow-lg">
+                                </div>
+                                <a href="#contact" class="btn btn-primary mt-4" style="width: 100%;">Upgrade System</a>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="liners" class="tab-content">
-                        <div class="service-detail-grid">
-                            <div class="service-detail-content">
-                                <h2>Liner Replacements</h2>
-                                <p>Breathe new life into your vinyl pool. Our precision-fit liners come in a wide
-                                    variety of contemporary patterns and durable materials.</p>
-                                <ul class="service-features">
+                        <!-- Liners -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                Liner Replacements
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Breathe new life into your vinyl pool with precision-fit liners in contemporary
+                                    patterns.</p>
+                                <ul class="service-features" style="grid-template-columns: 1fr;">
                                     <li><span class="material-symbols-outlined">check_circle</span> Custom 3D measuring
                                     </li>
                                     <li><span class="material-symbols-outlined">check_circle</span> Premium patterns
                                     </li>
                                     <li><span class="material-symbols-outlined">check_circle</span> Wrinkle-free fit
                                     </li>
-                                    <li><span class="material-symbols-outlined">check_circle</span> Step upgrades</li>
                                     <li><span class="material-symbols-outlined">check_circle</span> Fast installation
                                     </li>
-                                    <li><span class="material-symbols-outlined">check_circle</span> Warranty included
-                                    </li>
                                 </ul>
-                                <a href="#contact" class="btn btn-primary mt-10">Choose My Pattern</a>
-                            </div>
-                            <div class="service-detail-img">
-                                <img src="img/fondo-piscina-hero.png" alt="Liner Replacements"
-                                    class="img-responsive rounded-lg shadow-lg">
+                                <div class="service-detail-img">
+                                    <img src="img/fondo-piscina-hero.png" alt="Liner Replacements"
+                                        class="img-responsive rounded-lg shadow-lg">
+                                </div>
+                                <a href="#contact" class="btn btn-primary mt-4" style="width: 100%;">See Patterns</a>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="renovations" class="tab-content">
-                        <div class="service-detail-grid">
-                            <div class="service-detail-content">
-                                <h2>Full Major Renovations</h2>
-                                <p>From cracked concrete to a contemporary oasis. We handle complete structural
-                                    overhauls, including tiling, coping, and modern resurfacing.</p>
-                                <ul class="service-features">
+                        <!-- Renovations -->
+                        <div class="accordion-item">
+                            <button class="accordion-header" onclick="toggleAccordion(this)">
+                                Major Renovations
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>From cracked concrete to a contemporary oasis. Complete structural and aesthetic
+                                    overhaul.</p>
+                                <ul class="service-features" style="grid-template-columns: 1fr;">
                                     <li><span class="material-symbols-outlined">check_circle</span> Plaster resurfacing
                                     </li>
                                     <li><span class="material-symbols-outlined">check_circle</span> Glass tile work</li>
                                     <li><span class="material-symbols-outlined">check_circle</span> Coping & decking
                                     </li>
                                     <li><span class="material-symbols-outlined">check_circle</span> LED lighting</li>
-                                    <li><span class="material-symbols-outlined">check_circle</span> Water features</li>
-                                    <li><span class="material-symbols-outlined">check_circle</span> Automation setup
-                                    </li>
                                 </ul>
-                                <a href="#contact" class="btn btn-primary mt-10">Start My Design</a>
+                                <div class="service-detail-img">
+                                    <img src="img/slider-img2.jpeg" alt="Major Renovations"
+                                        class="img-responsive rounded-lg shadow-lg">
+                                </div>
+                                <a href="#contact" class="btn btn-primary mt-4" style="width: 100%;">Start My Design</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pool closing  -->
+            <section class="services-tabs-section closing-tab-section" id="services-tabs">
+                <div class="content">
+                    <div class="text-center mb-10">
+                        <h2 class="font-black section-title-large">POOL CLOSING / WINTERIZATION SERVICE</h2>
+                        <div class="title-separator-large"></div>
+                        <p class="text-muted section-subtitle">POOL CLOSING INCLUDES:</p>
+                        <ul class="service-features principal-list-features">
+                            <li><span class="material-symbols-outlined">check_circle</span> Lowering the water level
+                                (Except vinyl liners pools) to protect tile line from freezing</li>
+                            <li><span class="material-symbols-outlined">check_circle</span> Test water chemistry and add
+                                winter chemicals (charge for chemicals apply) *</li>
+                            <li><span class="material-symbols-outlined">check_circle</span> Remove and store pool side
+                                hardware (Separate charge for Safety fence) **</li>
+                            <li><span class="material-symbols-outlined">check_circle</span> Hose off filter elements and
+                                inspect for damage (Does not apply to sand filters) (Does not include repairs)</li>
+                            <li><span class="material-symbols-outlined">check_circle</span> Disable electrical power to
+                                filtration system (Remote control boxes and valves, auto-timers, switches or breakers)
+                            </li>
+                            <li><span class="material-symbols-outlined">check_circle</span> Winterize all pluggable
+                                lines on pool & spa (Except for auto-fillers) (Does not include winter plugs)</li>
+                            <li><span class="material-symbols-outlined">check_circle</span> Winterize pool equipment
+                                (Filter, pumps, heaters, blowers, etc)</li>
+                        </ul>
+
+                    </div>
+
+                    <!-- Tabs Navigation -->
+                    <div class="tabs-nav">
+                        <button class="tab-btn active" onclick="switchTab(event, 're-installation')">Winter cover
+                            re-installation</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'Closing')">Closing Chemicals package</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'Additional')">Additional equipment and
+                            service charges</button>
+                    </div>
+
+                    <!-- Tab Contents -->
+                    <div id="re-installation" class="tab-content active">
+                        <div class="service-detail-grid">
+                            <div class="service-detail-content">
+                                <h3 class="font-black section-title-large">Winter cover re-installation</h3>
+
+                                <ul class="service-features">
+                                    <li><span class="material-symbols-outlined">check_circle</span> Solid cover (Water
+                                        bags or water blocks)</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Solid safety cover
+                                        (Spring / Rubber bungees loaded)</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Mesh safety cover
+                                        (Spring / Rubber bungees loaded)</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> CABLE SYSTEM ON
+                                        COVER</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> WATER BLOCKS sure
+                                        charge on Safety covers</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary">GET A QUOTE</a>
                             </div>
                             <div class="service-detail-img">
-                                <img src="img/slider-img2.jpeg" alt="Major Renovations"
+                                <img src="img/pool-clean.jpeg" alt="Pool Opening"
                                     class="img-responsive rounded-lg shadow-lg">
                             </div>
                         </div>
                     </div>
+
+                    <div id="Closing" class="tab-content">
+                        <div class="service-detail-grid">
+                            <div class="service-detail-content">
+                                <h3 class="font-black section-title-large">Closing Chemicals package </h3>
+                                <p class="text-muted section-subtitle"> Treats up to 24k gallons</p>
+                                <ul class="service-features">
+                                    <li><span class="material-symbols-outlined">check_circle</span> 1 qt. Non-Foaming
+                                        Algaecide 60%</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Pool stain treatment
+                                        or stain and scale inhibitor</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> 2 Lbs. Sanitizer /
+                                        Oxidizer (Shock)</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Unlimited antifreeze
+                                        for this service</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary mt-10">GET A QUOTE</a>
+                            </div>
+                            <div class="service-detail-img">
+                                <img src="img/pool-clean2.jpeg" alt="Pool Closing"
+                                    class="img-responsive rounded-lg shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="Additional" class="tab-content">
+                        <div class="service-detail-grid">
+                            <div class="service-detail-content">
+                                <h3 class="font-black section-title-large">Additional equipment and service charges</h3>
+                                <ul class="service-features">
+                                    <li><span class="material-symbols-outlined">check_circle</span> Safety Fence / Baby
+                                        barrier</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Excess of leaves
+                                        removal from pool </li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Pool and Spa
+                                        combination</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> In-Floor cleaning
+                                        system (Caretaker)</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Extra Filter (Except
+                                        Sand)</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Extra Filter or SPA
+                                        Jets Pump</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Booster Pump
+                                        (Polaris pump)</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> o Motor un-wiring
+                                    </li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Motor rewiring</li>
+                                    <li><span class="material-symbols-outlined">check_circle</span> Pool vacuuming at
+                                        time of closing.</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary mt-10">GET A QUOTE</a>
+                            </div>
+                            <div class="service-detail-img">
+                                <img src="img/pool-clean3.jpeg" alt="Filtration Systems"
+                                    class="img-responsive rounded-lg shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -416,50 +665,109 @@
                 <div class="content">
                     <div class="form-container">
                         <div class="text-center mb-10">
-                            <h2 class="font-black section-title-large" style="color: var(--primary);">Contact Splash
-                                Pools</h2>
-                            <p class="text-muted section-subtitle-large">Send us a message and we'll get back to you
-                                within 24 hours.</p>
+                            <h2 class="font-black section-title-large" style="color: var(--primary);">Service Contract
+                                Form</h2>
+                            <p class="text-muted section-subtitle-large">Please fill out all the details to schedule
+                                your pool service.</p>
                             <div class="title-separator-large"></div>
                         </div>
 
                         <form action="https://formspree.io/f/xqakpory" method="POST" class="form-grid-v2">
-                            <div class="form-section-header col-full">Basic Information</div>
-
+                            <!-- Contact Info Section -->
+                            <div class="form-section-header col-full">Contact Information</div>
                             <div class="form-group col-span-2">
                                 <label for="name">Full Name</label>
                                 <input type="text" id="name" name="name" required placeholder="John Doe">
                             </div>
-
-                            <div class="form-group col-span-2">
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="cell">Cell</label>
+                                <input type="tel" id="cell" name="cell" placeholder="(555) 000-0000">
+                            </div>
+                            <div class="form-group col-full">
                                 <label for="email">E-mail Address</label>
                                 <input type="email" id="email" name="email" required placeholder="john@example.com">
                             </div>
 
-                            <div class="form-group col-span-2">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
-                            </div>
-
-                            <div class="form-group col-span-2">
-                                <label for="address">Project Address (Optional)</label>
-                                <input type="text" id="address" name="address" placeholder="123 Street Name">
-                            </div>
-
+                            <!-- Address Section -->
+                            <div class="form-section-header col-full">Service Address</div>
                             <div class="form-group col-full">
-                                <label for="message">Your Message</label>
-                                <textarea id="message" name="message" rows="4" required
-                                    placeholder="Type your message here..."></textarea>
+                                <label for="address">Address</label>
+                                <input type="text" id="address" name="address" required placeholder="123 Street Name">
+                            </div>
+                            <div class="form-group col-span-2">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" required placeholder="Coral Springs">
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" required placeholder="FL">
+                            </div>
+                            <div class="form-group">
+                                <label for="zip">ZIP</label>
+                                <input type="text" id="zip" name="zip" required placeholder="33065">
+                            </div>
+
+                            <!-- Payment Section -->
+                            <div class="form-section-header col-full">Payment Details</div>
+                            <div class="form-group">
+                                <label for="check_no">Check #</label>
+                                <input type="text" id="check_no" name="check_no" placeholder="Optional">
+                            </div>
+                            <div class="form-group">
+                                <label for="amount">Amount</label>
+                                <input type="text" id="amount" name="amount" placeholder="$0.00">
+                            </div>
+                            <div class="form-group col-span-2">
+                                <label for="cc_number">Credit Card #</label>
+                                <input type="text" id="cc_number" name="cc_number" placeholder="0000-0000-0000-0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="exp_date">Expiration Date</label>
+                                <input type="text" id="exp_date" name="exp_date" placeholder="MM/YY">
+                            </div>
+                            <div class="form-group">
+                                <label for="sec_code">Sec Code</label>
+                                <input type="text" id="sec_code" name="sec_code" placeholder="CVV">
+                            </div>
+                            <div class="form-group col-full">
+                                <label for="billing_info">C. Card ZIP Code & House number associated</label>
+                                <input type="text" id="billing_info" name="billing_info" placeholder="House # & ZIP">
+                            </div>
+
+                            <!-- Service Details Section -->
+                            <div class="form-section-header col-full">Service Schedule</div>
+                            <div class="form-group col-span-2">
+                                <label for="closing_date">Desired date for pool closing</label>
+                                <input type="date" id="closing_date" name="closing_date">
+                            </div>
+                            <div class="form-group col-span-2">
+                                <label for="today_date">Today's Date</label>
+                                <input type="date" id="today_date" name="today_date">
+                            </div>
+                            <div class="form-group col-full">
+                                <label for="signature">Customer's Signature</label>
+                                <input type="text" id="signature" name="signature" placeholder="Type name as signature">
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="agreement" name="agreement" required>
+                                <label for="agreement">I HAVE READ, UNDERSTOOD AND AGREE WITH THE CONTRACT TERMS</label>
                             </div>
 
                             <div class="col-full mt-4">
                                 <button type="submit" class="btn btn-primary btn-submit">
-                                    Send Message
+                                    Submit Information
                                 </button>
                             </div>
+                            <!--<p class="text-center col-full text-muted form-footer-text mt-4">
+                                <span class="material-symbols-outlined icon-xs">lock</span> Secure submission
+                                powered by Formspree.
+                            </p>-->
                         </form>
-                        <p class="text-center text-muted mt-4" style="font-size: 0.75rem;">Additional
-                            details available on our service contract form.</p>
                     </div>
                 </div>
             </section>
