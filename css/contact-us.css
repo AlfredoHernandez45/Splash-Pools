@@ -179,11 +179,11 @@ a {
 /* Contact Form Section */
 .contact-form-section {
     padding: 80px 0;
-    background-color: var(--white);
+    background-color: var(--primary);
 }
 
 .form-container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: var(--white);
     padding: 4rem;
@@ -200,7 +200,7 @@ a {
 
 .form-section-header {
     font-size: 1.125rem;
-    font-weight: 900;
+    font-weight: 700;
     color: var(--primary);
     margin-top: 1.5rem;
     padding-bottom: 0.5rem;
