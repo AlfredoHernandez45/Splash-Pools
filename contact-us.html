@@ -11,9 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/contact-us.css">
     <link rel="stylesheet" href="css/header.css">
-
     <link rel="stylesheet" href="css/footer.css">
 </head>
 
@@ -36,7 +36,7 @@
                 <div class="content">
                     <div class="contact-info-grid">
                         <!-- Address -->
-                        <div class="info-card" data-reveal>
+                        <div class="info-card reveal">
                             <div class="icon-box">
                                 <span class="material-symbols-outlined">location_on</span>
                             </div>
@@ -45,7 +45,7 @@
                             <a href="https://maps.google.com" target="_blank" class="info-link">View on Maps</a>
                         </div>
                         <!-- Phone/WhatsApp -->
-                        <div class="info-card" data-reveal>
+                        <div class="info-card reveal">
                             <div class="icon-box">
                                 <span class="material-symbols-outlined">phone</span>
                             </div>
@@ -54,7 +54,7 @@
                             <a href="tel:1234567890" class="info-link">(123) 456-7890</a>
                         </div>
                         <!-- Hours -->
-                        <div class="info-card" data-reveal>
+                        <div class="info-card reveal">
                             <div class="icon-box">
                                 <span class="material-symbols-outlined">schedule</span>
                             </div>
@@ -67,7 +67,7 @@
             </section>
 
             <!-- Contact Form Section -->
-            <section class="contact-form-section" data-reveal id="contact">
+            <section class="contact-form-section reveal" id="contact">
                 <div class="content">
                     <div class="form-container">
                         <div class="text-center mb-10">
@@ -221,19 +221,7 @@
                 }
 
                 // Scroll Reveal Animation
-                const observerOptions = {
-                    threshold: 0.1
-                };
-
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('revealed');
-                        }
-                    });
-                }, observerOptions);
-
-                document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+                // (Now handled globally by components.js and .reveal class)
             </script>
         </main>
     </div>
