@@ -768,3 +768,50 @@ textarea:focus {
         font-size: 2.5rem;
     }
 }
+
+/* Service Policy Notes */
+.service-policy-note {
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid #3ffff8;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: white;
+}
+
+.service-policy-note strong {
+    color: #3ffff8;
+    text-transform: uppercase;
+}
+
+.closing-tab-section .service-policy-note {
+    background: rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--primary);
+    color: #444; 
+}
+
+.closing-tab-section .service-policy-note strong {
+    color: var(--primary);
+}
+
+.mobile-closing-section .service-policy-note {
+    background: rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--primary);
+    color: #000;
+}
+
+.mobile-closing-section .service-policy-note strong {
+    color: var(--primary);
+}
+
+.mobile-opening-section .service-policy-note {
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid #3ffff8;
+    color: white;
+}
+
+.mobile-opening-section .service-policy-note strong {
+    color: #3ffff8;
+}
