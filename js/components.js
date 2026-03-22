@@ -10,7 +10,10 @@ const headerHTML = `
         <a href="index.html" class="logo-wrapper">
             <img src="img/logo.png" alt="Splash Pools Logo" class="logo-img">
         </a>
-        <nav>
+        <button class="hamburger-btn" aria-label="Toggle navigation">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+        <nav class="main-nav">
             <a class="nav-link" href="/">Home</a>
             <a class="nav-link" href="/services">Services</a>
             <!--<a class="nav-link" href="#">Portfolio</a>
@@ -38,11 +41,10 @@ const footerHTML = `
         <div class="footer-section">
             <h4>Quick Links</h4>
             <ul class="footer-links">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Project Gallery</a></li>
-                <li><a href="#">Service Areas</a></li>
-                <li><a href="#">Financing Options</a></li>
-                <li><a href="#">Maintenance Plans</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/services#pool-opening">Pool Opening Service</a></li>
+                <li><a href="/services#pool-closing">Pool Closing Service</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
             </ul>
         </div>
 
@@ -52,10 +54,14 @@ const footerHTML = `
                 <li style="display: flex; gap: 0.75rem;"><span
                         class="material-symbols-outlined text-primary">location_on</span> 123 Paradise Way,
                     Coral Springs, FL 33065</li>
-                <li style="display: flex; gap: 0.75rem;"><span
-                        class="material-symbols-outlined text-primary">call</span> (555) 987-6543</li>
-                <li style="display: flex; gap: 0.75rem;"><span
-                        class="material-symbols-outlined text-primary">mail</span> hello@splashpools.com
+                <li style="display: flex; gap: 0.75rem;">
+                <a class="footer-link-phone" href="tel:+15559876543">
+                <span
+                        class="material-symbols-outlined text-primary">call</span> (555) 987-6543</a></li>
+                <li style="display: flex; gap: 0.75rem;">
+                <a class="footer-link-email" href="mailto:splashpools@live.com">
+                <span
+                        class="material-symbols-outlined text-primary">mail</span> splashpools@live.com</a>
                 </li>
                 <li style="display: flex; gap: 0.75rem;"><span
                         class="material-symbols-outlined text-primary">schedule</span> Mon - Fri: 8am - 6pm
@@ -72,7 +78,7 @@ const footerHTML = `
         </div>
     </div>
 
-    <div class="max-w-1200"
+    <div class="max-w-1200 policy-links"
         style="padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; color: var(--slate-400); font-size: 0.75rem;">
         <p>© 2026 Splash Pools & Construction Inc. All rights reserved.</p>
         <div style="display: flex; gap: 1.5rem;">
@@ -89,6 +95,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (headerPlaceholder) {
         headerPlaceholder.innerHTML = headerHTML;
+        
+        const hamburgerBtn = document.querySelector('.hamburger-btn');
+        const mainNav = document.querySelector('.main-nav');
+        if (hamburgerBtn && mainNav) {
+            hamburgerBtn.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+                const icon = hamburgerBtn.querySelector('.material-symbols-outlined');
+                if (mainNav.classList.contains('active')) {
+                    icon.textContent = 'close';
+                } else {
+                    icon.textContent = 'menu';
+                }
+            });
+        }
     }
 
     if (footerPlaceholder) {
