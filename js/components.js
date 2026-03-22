@@ -52,8 +52,7 @@ const footerHTML = `
             <h4>Contact Us</h4>
             <ul class="footer-links">
                 <li style="display: flex; gap: 0.75rem;"><span
-                        class="material-symbols-outlined text-primary">location_on</span> 123 Paradise Way,
-                    Coral Springs, FL 33065</li>
+                        class="material-symbols-outlined text-primary">location_on</span> P.O. Box 618, Reisterstown, MD. 21136.</li>
                 <li style="display: flex; gap: 0.75rem;">
                 <a class="footer-link-phone" href="tel:+14109632370">
                 <span
