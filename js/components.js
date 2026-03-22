@@ -82,6 +82,7 @@ const footerHTML = `
         style="padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; color: var(--slate-400); font-size: 0.75rem;">
         <p>© 2026 Splash Pools & Construction Inc. All rights reserved.</p>
         <div style="display: flex; gap: 1.5rem;">
+            <a href="policies.html">Policies</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
         </div>
