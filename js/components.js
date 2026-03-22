@@ -55,9 +55,9 @@ const footerHTML = `
                         class="material-symbols-outlined text-primary">location_on</span> 123 Paradise Way,
                     Coral Springs, FL 33065</li>
                 <li style="display: flex; gap: 0.75rem;">
-                <a class="footer-link-phone" href="tel:+15559876543">
+                <a class="footer-link-phone" href="tel:+14109632370">
                 <span
-                        class="material-symbols-outlined text-primary">call</span> (555) 987-6543</a></li>
+                        class="material-symbols-outlined text-primary">call</span> +1 410 963 2370</a></li>
                 <li style="display: flex; gap: 0.75rem;">
                 <a class="footer-link-email" href="mailto:splashpools@live.com">
                 <span
