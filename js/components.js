@@ -83,8 +83,7 @@ const footerHTML = `
         <p>© 2026 Splash Pools & Construction Inc. All rights reserved.</p>
         <div style="display: flex; gap: 1.5rem;">
             <a href="policies.html">Policies</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <!--<a href="/terms-of-service">Terms of Service</a>-->
         </div>
     </div>
 </footer>
@@ -96,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (headerPlaceholder) {
         headerPlaceholder.innerHTML = headerHTML;
-        
+
         const hamburgerBtn = document.querySelector('.hamburger-btn');
         const mainNav = document.querySelector('.main-nav');
         if (hamburgerBtn && mainNav) {
@@ -131,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
     window.addEventListener("scroll", reveal);
-    
+
     // Trigger once on load
     reveal();
 });
